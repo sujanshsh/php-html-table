@@ -76,8 +76,7 @@ class Ttr extends HtmlElement{
 
     private function create_content() {
         $str='';        
-        foreach($this->cells as $cell)
-        {
+        foreach($this->cells as $cell) {
             $str.=$cell->get_html();
         }
         return $str;
@@ -109,8 +108,7 @@ class TrowGroup {
         $this->rows[$this->rcount]->add($th);
     }
     
-    public function th_array(array $ta)
-    {
+    public function th_array(array $ta) {
         foreach($ta as $th) {
             $this->th($th);
         }
@@ -121,8 +119,7 @@ class TrowGroup {
         $this->rows[$this->rcount]->add($td);
     }
     
-    public function td_array(array $ta)
-    {
+    public function td_array(array $ta) {
         foreach($ta as $th) {
             $this->td($th);
         }
@@ -140,8 +137,7 @@ class TrowGroup {
 
     private function create_content() {
         $str='';
-        foreach($this->rows as $row)
-        {
+        foreach($this->rows as $row) {
             $str.=$row->get_html();
         }
         return $str;
@@ -166,6 +162,7 @@ class HtmlTable {
     public function __construct($attributes) {
         $this->attributes=$attributes;
         $this->tag_name='table';
+        
         $this->thead = new TrowGroup('thead');
         $this->tbody = new TrowGroup('tbody');
     }
