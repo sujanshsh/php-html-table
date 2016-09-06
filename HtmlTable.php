@@ -152,8 +152,7 @@ class HtmlTable {
     public $thead;
     public $tbody;
     public $caption = '';
-    public $capid = "";
-    public $capclass = "";
+    public $caption_attributes = "";
 
     private function set_attributes($attributes) {
         $this->attributes=$attributes;
@@ -178,7 +177,12 @@ class HtmlTable {
     }
     
     private function create_content() {
-        return $this->thead->get_html().$this->tbody->get_html();
+        $caption_content='';        
+        if(trim($this->caption)!='') {
+            $temp = new HtmlElement('caption',$this->caption,$this->caption_attributes);
+            $caption_content = $temp->get_html();
+        }
+        return $caption_content.$this->thead->get_html().$this->tbody->get_html();
     }
 }
 
