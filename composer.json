@@ -1,10 +1,12 @@
 {
     "name": "sujanshsh/php-html-table",
+    "description": "PHP class for dynamic HTML table",
+    "type": "library",
     "authors": [
         {
             "name": "Sujan Shakya",
             "email": "iamsujanshakya@gmail.com"
         }
-    ]        
-        
+    ],
+    "require": {}
 }
