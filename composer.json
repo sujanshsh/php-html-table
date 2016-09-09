@@ -7,5 +7,10 @@
             "name": "Sujan Shakya",
             "email": "iamsujanshakya@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "php_html_table\\": ""
+        }
+    }
 }
