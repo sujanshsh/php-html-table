@@ -1,6 +1,8 @@
 <?php
 
-namespace php_html_table;
+namespace PHPHtmlTable;
+
+use PHPHtmlTable\HtmlElement;
 
 class Tth extends HtmlElement {
     public function __construct($content, $attributes="") {

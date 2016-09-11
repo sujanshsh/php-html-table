@@ -1,12 +1,9 @@
 <?php
 
-namespace php_html_table;
+namespace PHPHtmlTable;
 
-include 'HtmlElement.php';
-include 'Tth.php';
-include 'Ttd.php';
-include 'Ttr.php';
-include 'TtrowGroup.php';
+use PHPHtmlTable\HtmlElement;
+use PHPHtmlTable\TtrowGroup;
 
 class HtmlTable {
 

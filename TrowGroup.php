@@ -1,6 +1,11 @@
 <?php
 
-namespace php_html_table;
+namespace PHPHtmlTable;
+
+use PHPHtmlTable\HtmlElement;
+use PHPHtmlTable\Tth;
+use PHPHtmlTable\Ttd;
+use PHPHtmlTable\Ttr;
 
 class TrowGroup {
 

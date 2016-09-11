@@ -1,6 +1,6 @@
 <?php 
 
-namespace php_html_table;
+namespace PHPHtmlTable;
 
 class HtmlElement {
 

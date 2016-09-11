@@ -1,0 +1,30 @@
+<?php
+
+function __autoload($class) {
+    
+    include str_replace('PHPHtmlTable\\','',$class).'.php';
+}
+
+use PHPHtmlTable\HtmlTable;
+
+$t=new HtmlTable('class="table"');
+$t->caption="Testing Table";
+$t->caption_attributes='style="font-weight: bold;"';
+$t->thead->add_row();
+$t->thead->th_array(array(
+    'SN',
+    'Name',
+    'Price',
+    'Quantity',
+    'Total'
+));
+$t->tbody->add_row();
+$t->tbody->td('1');
+$t->tbody->td('Test');
+$t->tbody->td('100');
+$t->tbody->td('3');
+$t->tbody->td('300');
+$t->tbody->add_row();
+$t->tbody->td('','colspan="4"');
+$t->tbody->td('300');
+echo $t->get_html();
