@@ -3,7 +3,7 @@
 namespace PHPHtmlTable;
 
 use PHPHtmlTable\HtmlElement;
-use PHPHtmlTable\TtrowGroup;
+use PHPHtmlTable\TrowGroup;
 
 class HtmlTable {
 
