@@ -3,7 +3,7 @@ class for creating dynamic html table
 
 Usage Example:
 
-~~~php
+```php
 $t=new HtmlTable('class="table"');
 $t->caption="Testing Table";
 $t->caption_attributes='style="font-weight: bold;"';
@@ -25,3 +25,7 @@ $t->tbody->add_row();
 $t->tbody->td('','colspan="4"');
 $t->tbody->td('300');
 $t->echo_html();
+```
+
+### Mentors:   
+1. [bdryagya](https://github.com/bdryagya)
